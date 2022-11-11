@@ -1,8 +1,11 @@
 import React from "react";
 import classes from "./Adminloginpage.module.css";
+import Navbar from "../../Navbar/Navbar";
 
 function AdminloginPage() {
   return (
+    <div>
+      <Navbar/>
     <div className={[classes.background, classes.container1].join(" ")}>
       <div className={classes.container2}>
         <div className={classes.textcenter}>
@@ -29,6 +32,7 @@ function AdminloginPage() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }
