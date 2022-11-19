@@ -1,8 +1,46 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import classes from "./Userloginpage.module.css";
 
-function UserloginPage() {
+const UserloginPage = () => {
+  const [userid, setUserId] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  useEffect(() => {
+    const auth = localStorage.getItem("user");
+    if (auth) {
+      navigate("/dashboard");
+    }
+  }, []);
+  const handleLogin = async () => {
+    let result = await fetch("http://localhost:5000/login", {
+      method: "post",
+      body: JSON.stringify({ userid, password }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    result = await result.json();
+    console.warn(result);
+    if (result.name) {
+      localStorage.setItem("user", JSON.stringify(result));
+      switch(JSON.stringify({userid})){
+        case '{"userid":"kashundi"}': navigate("/kashundiadminpage");
+        break;
+        case '{"userid":"shuttle"}': navigate("/shuttleadminpage");
+        break;
+        case '{"userid":"spacebook"}': navigate("/spacebookadminpage");
+        break;
+        case '{"userid":"printzone"}': navigate("/printzoneadminpage");
+        break;
+        default : navigate("/dashboardpage");
+      }
+      
+    } else {
+      alert("Wrong ID or Password");
+    }
+  };
+
   return (
     <div className={[classes.background, classes.container1].join(" ")}>
       <div className={classes.container2}>
@@ -11,27 +49,39 @@ function UserloginPage() {
           <form>
             <label className={classes.label}>
               User ID : <tab></tab>
-              <input className={classes.inputbox} type="text" name="User ID" />
+              <input
+                className={classes.inputbox}
+                type="text"
+                placeholder="Enter ID"
+                onChange={(e) => setUserId(e.target.value)}
+                value={userid}
+              />
             </label>
             <br></br>
             <label className={classes.label}>
               Password : <tab></tab>
               <input
                 className={classes.inputbox}
-                type="text"
-                name="User Password"
+                type="password"
+                placeholder="Enter Password"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
               />
             </label>
             <br></br>
             <br></br>
-            <Link className={classes.nounderline} to="/bookingpage">
-              <button className={classes.loginbtn}>Log In</button>
-            </Link>
+            <button
+              onClick={handleLogin}
+              type="button"
+              className={classes.loginbtn}
+            >
+              Log In
+            </button>
           </form>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default UserloginPage;
