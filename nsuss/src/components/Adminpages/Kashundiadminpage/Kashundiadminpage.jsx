@@ -3,7 +3,7 @@ const Kashundiadminpage = () => {
 
   return (
     <div>
-      <h1>Kashundiadminpage</h1>
+      <h1>Welcome to Kashundi Adminpage</h1>
     </div>
     );
 };

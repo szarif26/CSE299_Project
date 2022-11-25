@@ -13,7 +13,7 @@ function Navbar() {
     <div className={Classes.container}>
       <ul className={Classes.navul}>
 
-        <li className={Classes.navmenubtn}><Link className={[Classes.nounderline, Classes.navbarli].join(" ")} to="/Homepage">
+        <li className={Classes.navmenubtn}><Link className={[Classes.nounderline, Classes.navbarli].join(" ")} to="/">
             <img
               className={Classes.navbarlogo}
               src={NavbarLogo}
@@ -25,7 +25,7 @@ function Navbar() {
           {" "}
           <Link
             className={[Classes.nounderline, Classes.navbarli].join(" ")}
-            to="/Homepage"
+            to="/"
           >
             Home
           </Link>

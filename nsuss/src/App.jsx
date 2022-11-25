@@ -5,6 +5,7 @@ import Printzoneadminpage from "./components/Adminpages/Printzoneadminpage/Print
 import Shuttleadminpage from "./components/Adminpages/Shuttleadminpage/Shuttleadminpage";
 import Spacebookadminpage from "./components/Adminpages/Spacebookadminpage/Spacebookadminpage";
 import Dashboardpage from "./components/Dashboardpage/Dashboardpage";
+import Footer from "./components/Footerpage/Footerpage";
 import Homepage from "./components/Homepage/Homepage";
 import Userloginpage from "./components/Login/Userloginpage/Userloginpage";
 import Navbar from "./components/Navbar/Navbar";
@@ -26,9 +27,11 @@ function App() {
             <Route path="/spacebookadminpage" exact element={<Spacebookadminpage />}/>
             <Route path="/printzoneadminpage" exact element={<Printzoneadminpage />}/>
           </Route>
-          <Route path="/Homepage" exact element={<Homepage />} />
+          <Route path="/" exact element={<Homepage />} />
           <Route path="/userloginpage" exact element={<Userloginpage />} />
         </Routes>
+        <Footer/>
+        
       </div>
     </Router>
   );

@@ -1,11 +1,19 @@
 import React from "react";
-const Homepage = () => {
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Banner from "./Banner"; 
 
+function Homepage() {
   return (
-    <div>
-      
-    </div>
-    );
-};
+      <React.Fragment>
+   <Banner/>
+   
+        <div className="classes.container"> 
+
+
+        </div>
+    </React.Fragment>
+ 
+  );
+}
 
 export default Homepage;

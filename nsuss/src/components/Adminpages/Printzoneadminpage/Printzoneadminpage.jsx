@@ -3,7 +3,7 @@ const Printzoneadminpage = () => {
 
   return (
     <div>
-      <h1>Printzoneadminpage</h1>
+      <h1>printzoneadminpage</h1>
     </div>
     );
 };

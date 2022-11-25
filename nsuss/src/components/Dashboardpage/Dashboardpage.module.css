@@ -22,27 +22,27 @@
 .col{
     flex-basis: 50%;
 }
-h1{
+.h1{
     color:rgb(30, 33, 32);
 font-size: 50px;
 }
 
-p{
+.p{
     color:rgb(252, 252, 252);
     font-size: 15px;
-    line-height: 15pxS;
+    line-height: 15px;
+    margin-top: 10px;
     padding: 2px 0;
 }
-button{
+.button{
     width: 240px;
     color:#000;
     font-size: 12px;
-    padding: 12px 0;
+    padding: 12px 0px;
     background: rgb(171, 149, 149);
-    border:0;
+    border: 1px;
     border-radius: 12px;
-    outline: none;
-    margin-top:30px ;
+    margin-top:20px ;
 }
 
 
@@ -60,7 +60,7 @@ button{
     background-size: cover;
 transition: transform 0.5;
 }
-h5{
+.h5{
     font-size: 30px;
     color: rgb(219, 106, 40);
     text-shadow: 0 0 5px #999;

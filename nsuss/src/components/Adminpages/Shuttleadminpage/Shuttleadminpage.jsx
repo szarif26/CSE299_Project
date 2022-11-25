@@ -3,7 +3,7 @@ const Shuttleadminpage = () => {
 
   return (
     <div>
-      <h1>Shuttleadminpage</h1>
+      <h1>Welcome to Shuttle adminpage</h1>
     </div>
     );
 };
