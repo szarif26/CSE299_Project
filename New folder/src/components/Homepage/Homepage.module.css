@@ -1,0 +1,17 @@
+*{
+    padding:0;
+margin:0;
+box-sizing: border-box;
+}
+.container{
+height: 450px;
+width: 100%;
+background-color: beige;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+animation-name: ani ;
+animation-duration: 12s ;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}

@@ -1,0 +1,83 @@
+.container {
+  margin: 0 auto;
+  background-color: #bfc6ce;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  max-height: 70px;
+  border: 0.1px;
+  padding: 1%;
+}
+
+.navbarlogo {
+  max-width: 35%;
+  margin-bottom: 1%;
+}
+.navmenubtn {
+  display: inline;
+  color: #0a3d62;
+  padding: 0.2em 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 100px;
+  margin: 0px 0px 65px 0px;
+  margin-top: -30px;
+}
+
+.li {
+  display: inline;
+}
+.navul {
+  display: inline;
+  list-style-type: none;
+  position: left;
+  background-color: #bfc6ce;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  max-height: 50px;
+}
+
+.navbarli {
+  display: inline;
+  color: #0a3d62;
+  padding: 0.2em 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 150px;
+  margin: 0px 0px 65px 0px;
+  margin-top: -30px;
+}
+.navbarlilogout {
+  display: inline;
+  color: white;
+  padding: 0.2em 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: maroon;
+  border: 1px solid transparent;
+  width: 150px;
+  margin: 0px 0px 65px 0px;
+  margin-top: -30px;
+  border-radius: 50px;
+}
+
+.navmenulogobtn:hover {
+  opacity: 0.5;
+}
+
+.navmenuli:hover {
+  opacity: 0.5;
+}
+
+.navmenulilogout:hover {
+  opacity: 0.5;
+}
+
+.nounderline {
+  text-decoration: none;
+}
