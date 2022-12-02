@@ -73,7 +73,6 @@ const spacebookuserpage= () => {
               <br></br>
               
               <button onClick={handlespacebook} className={classes.btn} >Confirm Booking</button>
-              <button className={classes.btn} >Reset</button>
 
           </div>
         </div>

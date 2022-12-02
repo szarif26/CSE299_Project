@@ -24,14 +24,14 @@ const UserloginPage = () => {
     console.warn(result);
     if (result.name) {
       localStorage.setItem("user", JSON.stringify(result));
-      switch(JSON.stringify({userid})){
-        case '{"userid":"kashundi"}': navigate("/kashundiadminpage");
+      switch(JSON.parse(window.localStorage.getItem("user")).userid){
+        case 'kashundi': navigate("/kashundiadminpage");
         break;
-        case '{"userid":"shuttle"}': navigate("/shuttleadminpage");
+        case 'shuttle': navigate("/shuttleadminpage");
         break;
-        case '{"userid":"spacebook"}': navigate("/spacebookadminpage");
+        case 'spacebook': navigate("/spacebookadminpage");
         break;
-        case '{"userid":"printzone"}': navigate("/printzoneadminpage");
+        case 'printzone': navigate("/printzoneadminpage");
         break;
         default : navigate("/dashboardpage");
       }

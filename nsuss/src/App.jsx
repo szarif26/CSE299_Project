@@ -12,11 +12,13 @@ import Footer from "./components/Footerpage/Footerpage";
 import Homepage from "./components/Homepage/Homepage";
 import Userloginpage from "./components/Login/Userloginpage/Userloginpage";
 import Navbar from "./components/Navbar/Navbar";
-import PrivateComponents from "./components/Navbar/PrivateComponents";
+import PrivateKashundiComponent from "./components/Navbar/PrivateKashundiComponent";
+import PrivateShuttleComponent from "./components/Navbar/PrivateShuttleComponent";
+import PrivateSpacebookComponent from "./components/Navbar/PrivateSpacebookComponent";
+import PrivateStudentComponent from "./components/Navbar/PrivateStudentComponent";
 import Printzonepage from "./components/Printzone/Printzoneuserpage";
-import Bookingpage from "./components/Shuttle/Booking/Bookingpage";
+import Bookingpage from "./components/Shuttle/Bookingpage";
 import Spacebookpage from "./components/Spcaebook/Spacebookuserpage";
-
 
 function App() {
   return (
@@ -24,24 +26,45 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route element={<PrivateComponents />}>
+          <Route element={<PrivateStudentComponent />}>
             <Route path="/bookingpage" exact element={<Bookingpage />} />
             <Route path="/dashboardpage" exact element={<Dashboardpage />} />
-            <Route path="/kashundiadminpage" exact element={<Kashundiadminpage />}/>
-            <Route path="/shuttleadminpage" exact element={<Shuttleadminpage />}/>
-            <Route path="/spacebookadminpage" exact element={<Spacebookadminpage />}/>
-            <Route path="/printzoneadminpage" exact element={<Printzoneadminpage />}/>
-            <Route path="/spacebookpage" exact element={<Spacebookpage />}/>
-            <Route path="/printzonepage" exact element={<Printzonepage />}/>
-            <Route path="/Item" exact element={<Item/>}/>
-            <Route path="/Additem" exact element={<Additem/>}/>
-            <Route path="/Updateitem" exact element={<Updateitem/>}/>
+            <Route path="/printzonepage" exact element={<Printzonepage />} />
+            <Route path="/spacebookpage" exact element={<Spacebookpage />} />
+            
+            <Route path="/printzoneadminpage" exact element={<Printzoneadminpage />}/> </Route>
+            
+          <Route element={<PrivateKashundiComponent />}>
+            <Route
+              path="/kashundiadminpage"
+              exact
+              element={<Kashundiadminpage />}
+            />
+            <Route path="/Item" exact element={<Item />} />
+            <Route path="/Additem" exact element={<Additem />} />
+            <Route path="/Updateitem" exact element={<Updateitem />} />
           </Route>
+
+          <Route element={<PrivateShuttleComponent />}>
+            <Route
+              path="/shuttleadminpage"
+              exact
+              element={<Shuttleadminpage />}
+            />
+          </Route>
+
+          <Route element={<PrivateSpacebookComponent />}>
+          <Route
+              path="/spacebookadminpage"
+              exact
+              element={<Spacebookadminpage />}
+            />
+          </Route>
+
           <Route path="/" exact element={<Homepage />} />
           <Route path="/userloginpage" exact element={<Userloginpage />} />
         </Routes>
-        <Footer/>
-        
+        <Footer />
       </div>
     </Router>
   );
