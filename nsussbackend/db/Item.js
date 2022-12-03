@@ -5,6 +5,7 @@ const itemschema = new mongoose.Schema({
     name : 'string',
     price : 'string',
     category : 'string',
+    quantity : 'string',
 
 });
 

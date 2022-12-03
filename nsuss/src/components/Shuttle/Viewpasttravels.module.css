@@ -1,0 +1,13 @@
+.Shuttlebook_List {
+  text-align: center;
+  margin-top: 50px;
+}
+.Shuttlebook_List ul li {
+  display: inline;
+
+  border: 1px solid black;
+  padding: 5px;
+}
+.Shuttlebook_List ul {
+  margin: 0;
+}

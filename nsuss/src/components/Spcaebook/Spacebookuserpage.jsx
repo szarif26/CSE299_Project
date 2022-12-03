@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import classes from './Spacebookuserpage.module.css';
 
 const spacebookuserpage= () => {
@@ -18,6 +19,7 @@ const spacebookuserpage= () => {
     });
     result= await result.json();
     console.warn(result);
+    alert("Successfully Booked Your Space");
   }
   
   return (
@@ -25,7 +27,9 @@ const spacebookuserpage= () => {
       <div className={classes.row}>
         <div className={classes.col}>
           <h1>To book a Space fill the form</h1>
-          <button className={classes.btn} >View Current Bookings</button>
+          <Link className={classes.nounderline} to="/userviewcurrentbooking">
+            <button type="submit" className={classes.btn} >View Current Bookings</button>
+          </Link>
         </div>
         <div className={classes.col}>
           <div className={classes.form}>
@@ -54,12 +58,12 @@ const spacebookuserpage= () => {
                 <option className={classes.formselect} value="" disabled selected hidden>
                   Select a Slot
                 </option>
-                <option className={classes.formselect} value="8:00AM">8:00AM-9:30AM</option>
-                <option className={classes.formselect} value="9:40AM">9:40AM-11:10AM</option>
-                <option className={classes.formselect} value="11:20AM">11:20AM-12:50PM</option>
-                <option className={classes.formselect} value="12:50PM">1:00PM-2:30PM</option>
-                <option className={classes.formselect} value="2:40PM">2:40PM-4:10PM</option>
-                <option className={classes.formselect} value="4:10PM">4:20PM-5:50PM</option>
+                <option className={classes.formselect} value="8:00AM-9:30AM">8:00AM-9:30AM</option>
+                <option className={classes.formselect} value="9:40AM-11:10AM">9:40AM-11:10AM</option>
+                <option className={classes.formselect} value="11:20AM-12:50PM">11:20AM-12:50PM</option>
+                <option className={classes.formselect} value="1:00PM-2:30PM">1:00PM-2:30PM</option>
+                <option className={classes.formselect} value="2:40PM-4:10PM">2:40PM-4:10PM</option>
+                <option className={classes.formselect} value="4:20PM-5:50PM">4:20PM-5:50PM</option>
               </select>
 
               <br></br>

@@ -1,6 +1,6 @@
 .form {
   width: 100%;
-  background-color: rgb(70, 70, 70, 0.85);
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 30px 0 (224, 224, 224, 1);
   padding: 60px 50px;
   max-width: 450px;
@@ -8,7 +8,7 @@
 }
 
 .formlabel {
-  background-color: lavenderblush;
+  background-color: azure;
   margin: auto;
   font-weight: bold;
   font-family: sans-serif;
@@ -21,7 +21,7 @@
   float: left;
 }
 .formselect {
-  background-color: lavenderblush;
+  background-color: azure;
   margin: auto;
   font-weight: bold;
   font-family: sans-serif;
@@ -37,9 +37,9 @@
 .btn {
   padding: 0.5em 1em;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: bold;
   color: black;
-  background-color: #cfc647;
+  background-color: azure;
   border: 1px solid #222f3e;
   border-radius: 20px;
 }

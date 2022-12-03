@@ -1,30 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from 'react-router-dom';
 import classes from "./Item.module.css";
 
-const additem = () => {
+const Update = () => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
   const [itemId, setitemId] = useState("");
   const [quantity, setquantity]= useState("");
+  const params = useParams();
+  const navigate = useNavigate();
 
-  const handleAddItem = async () => {
-    console.warn(name, price, category, itemId, quantity);
-    let result = await fetch("http://localhost:4000/additem", {
-      method: "post",
-      body: JSON.stringify({ name, price, category, itemId, quantity }),
-      headers: {
-        "content-Type": "application/json",
-      },
+  useEffect(()=>{
+    getProductDetails()
+  },[])
+  const getProductDetails= async ()=>{
+    console.warn(params)
+    let result = await fetch(`http://localhost:4000/item/${params.itemId}`);
+    result=await result.json();
+    console.warn(result)
+    setName(result.name)
+    setPrice(result.price)
+    setCategory(result.category)
+    setitemId(result.itemId)
+    setquantity(result.quantity)
+  }
+
+  const handleUpdate = async () => {
+    console.warn(name,price,category,itemId,quantity);
+    let result= await fetch(`http://localhost:4000/item/${params.itemId}`,{
+        method:'Put',
+        body:JSON.stringify({name,price,category,itemId,quantity}),
+        headers:{
+            'Content-Type':'Application/json'
+        }
     });
-    result = await result.json();
-    console.warn(result);
-    alert("Successfully Added Your Food");
+        result = await result.json()
+        console.warn(result)
+        if(result){
+        navigate  ("/updateitem");
+        }
   };
   return (
     <div className={classes.background}>
       <div className={classes.container1}>
-        <h1 className={classes.h1}> Add New Item </h1>
+        <h1 className={classes.h1}> Update Item </h1>
         <input
           type="text"
           placeholder="Enter item name"
@@ -62,12 +82,12 @@ const additem = () => {
         value={quantity}
         ></input>
        
-        <button onClick={handleAddItem} className={classes.button}>
-          Add Item
+        <button onClick={handleUpdate} className={classes.button}>
+          Update Item
         </button>
       </div>
     </div>
   );
 };
 
-export default additem;
+export default Update;
