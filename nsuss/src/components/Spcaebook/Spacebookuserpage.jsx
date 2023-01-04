@@ -1,27 +1,64 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from './Spacebookuserpage.module.css';
-
+import { useNavigate } from "react-router-dom";
 const spacebookuserpage= () => {
   const [userid, setUserid] = useState(JSON.parse(window.localStorage.getItem("user")).userid);
   const [area, setArea] = useState("");
   const [timeslot, setTimeslot] = useState("");
   const [date, setDate] = useState("");
+  const [status, setStatus] = useState("");
+  const [comment, setComment] = useState("");
+  const [Bookingid, setBookingid] = useState(Math.round(Math.random() * 1000));
+  const navigate = useNavigate();
+
+ console.log(Bookingid);
+
+
 
   const handlespacebook= async ()=>{
-    console.warn( userid, area, timeslot, date)
+    console.warn( Bookingid, userid, area, timeslot, date,status,comment)
     let result = await fetch("http://localhost:4000/spacebook",{
       method: 'post',
-      body:JSON.stringify({ userid, area, timeslot, date}),
+      body:JSON.stringify({ Bookingid, userid, area, timeslot, date, status, comment}),
       headers:{
         'content-Type':'application/json'
       }
     });
     result= await result.json();
     console.warn(result);
-    alert("Successfully Booked Your Space");
-  }
+    if(result){
+      alert("Successfully Booked Your Space");
+      navigate ("/spacebookpage");
+    }
   
+   
+  };
+
+  {var startday = new Date();
+    startday.setDate(startday.getDate() + 1);
+    var dd = startday.getDate();
+    var mm = startday.getMonth() + 1; //January is 0!
+    var yyyy = startday.getFullYear();
+    if (dd < 10) {
+      dd = '0' + dd
+    }
+    if (mm < 10) {
+      mm = '0' + mm
+    }
+    startday = yyyy + '-' + mm + '-' + dd;}
+    {var finalday = new Date();
+      finalday.setDate(finalday.getDate() + 14);
+      var fdd = finalday.getDate();
+      var fmm = finalday.getMonth() + 1; //January is 0!
+      var fyyyy = finalday.getFullYear();
+      if (fdd < 10) {
+        fdd = '0' + fdd
+      }
+      if (fmm < 10) {
+        fmm = '0' + fmm
+      }
+      finalday = fyyyy + '-' + fmm + '-' + fdd;}  
   return (
     <div className={[classes.background, classes.container].join(" ")}>
       <div className={classes.row}>
@@ -71,13 +108,19 @@ const spacebookuserpage= () => {
               
               <label  className={classes.formlabel}>Date</label>
               <input onChange={(e) => setDate(e.target.value)}
-                value={date} className={classes.formselect} id="dateRequired" type="date" name="dateRequired" />
+                value={date} className={classes.formselect} id="dateRequired" type="date" name="dateRequired" min={startday} max={finalday}/>
 
               <br></br>
               <br></br>
-              
+              <input hidden onChange={() => setStatus("NULL")}
+                value={status}></input>
+              <input hidden onChange={() => setComment("NULL")}
+                value={comment}></input>
+
+            <Link className={classes.nounderline} to ={"/spacebookuserpage"}>
               <button onClick={handlespacebook} className={classes.btn} >Confirm Booking</button>
-
+             </Link>
+            
           </div>
         </div>
       </div>

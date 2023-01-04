@@ -24,6 +24,31 @@ const booking =()=> {
     alert("Successfully Booked Your Travel");
   }
 
+  {var startday = new Date();
+    startday.setDate(startday.getDate() + 1);
+    var dd = startday.getDate();
+    var mm = startday.getMonth() + 1; //January is 0!
+    var yyyy = startday.getFullYear();
+    if (dd < 10) {
+      dd = '0' + dd
+    }
+    if (mm < 10) {
+      mm = '0' + mm
+    }
+    startday = yyyy + '-' + mm + '-' + dd;}
+    {var finalday = new Date();
+      finalday.setDate(finalday.getDate() + 7);
+      var fdd = finalday.getDate();
+      var fmm = finalday.getMonth() + 1; //January is 0!
+      var fyyyy = finalday.getFullYear();
+      if (fdd < 10) {
+        fdd = '0' + fdd
+      }
+      if (fmm < 10) {
+        fmm = '0' + fmm
+      }
+      finalday = fyyyy + '-' + fmm + '-' + fdd;}  
+
   return (
     <div className={[classes.background, classes.container].join(" ")}>
       <div className={classes.row}>
@@ -127,7 +152,7 @@ const booking =()=> {
                 value={date} className={classes.formselect}
               id="dateRequired"
               type="date"
-              name="dateRequired"
+              name="dateRequired" min={startday} max={finalday}
             />
 
             <br></br>

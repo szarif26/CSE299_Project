@@ -1,0 +1,140 @@
+.background {
+    background-image: url(../../../../src/Assets/lmsdashboardstudent.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+  
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+  .row {
+    display: flex;
+    height: 95%;
+    align-items: center;
+  }
+  .col {
+    flex-basis: 50%;
+  }
+  .h1 {
+    color: rgb(35, 40, 38);
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+  
+  .p {
+    color: rgb(252, 252, 252);
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+    padding: 2px 0;
+  }
+  .button {
+    width: 240px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0px;
+    background: rgb(171, 149, 149);
+    border: 1px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  .board {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 7px 12px;
+    background-image: url(../../../../src/Assets/faccheckexam.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+  }
+  .h5 {
+    font-size: 30px;
+    color: rgb(219, 106, 40);
+    text-shadow: 0 0 5px #999;
+  }
+  .board2 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 7px 12px;
+    background-image: url(../../../../src/Assets/attendance_button.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+  }
+  .board3 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 7px 12px;
+    background-image: url(../../../../src/Assets/exam_button.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+  }
+  .board4 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 7px 12px;
+    background-image: url(../../../../src/Assets/Shuttle.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+  }
+  .board5 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 7px 12px;
+    background-image: url(../../../../src/Assets/LMS.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+  }
+  .board1:hover {
+    transform: translateY(-10px);
+  }
+  .board2:hover {
+    transform: translateY(-10px);
+  }
+  .board3:hover {
+    transform: translateY(-10px);
+  }
+  .board4:hover {
+    transform: translateY(-10px);
+  }
+  .board5:hover {
+    transform: translateY(-10px);
+  }
+  

@@ -22,21 +22,33 @@ const UserloginPage = () => {
     });
     result = await result.json();
     console.warn(result);
-    if (result.name) {
-      localStorage.setItem("user", JSON.stringify(result));
-      switch(JSON.parse(window.localStorage.getItem("user")).userid){
-        case 'kashundi': navigate("/kashundiadminpage");
-        break;
-        case 'shuttle': navigate("/shuttleadminpage");
-        break;
-        case 'spacebook': navigate("/spacebookadminpage");
-        break;
-        case 'printzone': navigate("/printzoneadminpage");
-        break;
-        default : navigate("/dashboardpage");
+
+      if(result.name){
+        console.warn(result);
+        localStorage.setItem("user", JSON.stringify(result));
+        const id = JSON.parse(window.localStorage.getItem("user")).userid;
+        const sid = parseInt(JSON.parse(window.localStorage.getItem("user")).userid);
+        if(id==='kashundi'){
+          navigate("/kashundiadminpage");
+        }
+        else if (id==='shuttle'){
+          navigate("/shuttleadminpage");
+        }
+        else if (id==='spacebook'){
+          navigate("/spacebookadminpage");
+        }
+        else if (id==='printzone'){
+          navigate("/printzoneadminpage");
+        }
+        else if(sid > 1000000000 && sid < 9999999999){
+          navigate("/dashboardpage");
+        }
+        else{
+          navigate("/facultydashboardpage");
+        }
       }
       
-    } else {
+     else {
       alert("Wrong ID or Password");
     }
   };

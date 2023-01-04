@@ -1,0 +1,55 @@
+.background {
+    background-image: url(../../Assets/Additem.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container1 {
+    min-height: 768px;
+    border: 1px dotted rgb(6, 6, 6);
+    background-color: #000;
+    padding: 2%;
+    opacity: .7;
+  }
+ 
+  
+  .button {
+    width: 150px;
+    height: 50px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 12px 0px;
+    background: rgb(123, 123, 123);
+    border-radius: 12px;
+    margin-left: 18px;
+  
+    font-family: serif;
+    width: 300px;
+    margin: 90px;
+  }
+  
+  .button:hover {
+    transform: translateY(-10px);
+    background-color: #5b5350;
+  }
+  
+
+  
+  
+  .h1 {
+    margin-top:90px;
+    text-align: center;
+    text-decoration:solid;
+    font-family: cursive;
+    color:white;
+  }
+
+ 
+  
+
+  
+  

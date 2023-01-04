@@ -1,0 +1,117 @@
+.background {
+    background-image: url(../../../Assets/Additem.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container1 {
+    min-height: 768px;
+    border: 1px dotted rgb(6, 6, 6);
+    padding: 2%;
+  }
+  
+  .inputbox {
+    background-image: url(../../../Assets/Additem.webp);
+    padding: 7px;
+    display: block;
+    border: 1px solid rgb(61, 63, 64);
+    width: 300px;
+    margin: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 15px;
+    color: aliceblue;
+  }
+  .button {
+    width: 150px;
+    height: 50px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 12px 0px;
+    background: rgb(123, 123, 123);
+    border-radius: 12px;
+    margin-left: 18px;
+    margin-top: 0px;
+    font-family: serif;
+    width: 300px;
+    margin: 20px;
+  }
+  .button:hover {
+    transform: translateY(-10px);
+    background-color: #5b5350;
+  }
+  .h1 {
+    text-align: center;
+    text-decoration: line-through;
+    font-family: cursive;
+  }
+  .Item_List{
+    text-align: center;
+    margin-top: 50px;
+  
+   
+  }
+  .Item_List ul li{
+    display: inline;
+   border: 1px solid rgb(147, 171, 118);
+    border-width: 1px;
+    
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+    color:rgb(255, 162, 96);
+    border-collapse: collapse;
+    margin:auto;
+    text-align: center;
+    table-layout: fixed;
+  
+  
+    
+  }
+  .Item_List ul{
+    margin-top:0;
+    height: 19px;
+  
+   
+  
+  }
+  .background1 {
+    background-image: url(../../../Assets/items.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-position: flex;
+  }
+  
+  .container2 {
+    min-height: 768px;
+    border: 1px dotted rgb(6, 6, 6);
+    padding: 2%;
+    
+    background-color: #000;
+    opacity: .5;
+    display: flex;
+  }
+  
+  .heading{
+    text-align: center;
+    font-weight:bolder;
+    font-size: xx-large;
+    text-decoration-line: overline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(211, 235, 159);
+    
+  }
+  .box{
+  width: 500px;
+  height:20%;
+  column-gap: 4px;
+  }

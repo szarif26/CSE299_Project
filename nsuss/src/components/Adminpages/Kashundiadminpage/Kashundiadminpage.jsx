@@ -47,6 +47,15 @@ const Kashundiadminpage = () => {
                 </div>
                 </button>
                 </Link>
+                <Link className={classes.nounderline} to="/Vieworderlist">
+                <button type="submit" className={classes.button}>
+                <div className={classes.board3}>
+                    <h5 className={classes.h5}>View Order-list</h5>
+                    <p className={classes.p}><b> </b>
+                    </p>
+                </div>
+                </button>
+                </Link>
               
                 
                

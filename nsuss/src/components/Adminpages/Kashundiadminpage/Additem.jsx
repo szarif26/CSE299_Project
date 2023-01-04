@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import classes from "./Item.module.css";
+import classes from "./Additem.module.css";
+import {Link} from "react-router-dom";
 
 const additem = () => {
   const [name, setName] = useState("");
@@ -61,10 +62,12 @@ const additem = () => {
         onChange={(e) => setquantity(e.target.value)}
         value={quantity}
         ></input>
-       
+       <Link  className={classes.nounderline} to={"/Item"}>
+      
         <button onClick={handleAddItem} className={classes.button}>
           Add Item
         </button>
+        </Link>
       </div>
     </div>
   );

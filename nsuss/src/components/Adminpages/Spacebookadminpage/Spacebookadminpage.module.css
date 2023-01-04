@@ -1,13 +1,112 @@
-.Spacebook_List {
-  text-align: center;
-  margin-top: 50px;
-}
-.Spacebook_List ul li {
-  display: inline;
 
-  border: 1px solid black;
-  padding: 5px;
+.Spacebook_List{
+  text-align: center;
+ 
 }
-.Spacebook_List ul {
-  margin: 0;
+.li{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 199px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
 }
+.li1{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 110px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+.li2{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 200px;
+  height:auto;
+  max-width: 400px;
+  
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+.li3{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 150px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+.ul{
+  margin-top:0px;
+  height: 45px;
+
+display:flex;
+margin-bottom: 0px;
+}
+.background1 {
+  background-image: url(../../../Assets/Spacebook.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ 
+  background-position: flex;
+ 
+ 
+}
+
+.container2 {
+ 
+  background-color: #000;
+  opacity: .7;
+  padding:2%;
+  display: flex;
+
+}
+
+.heading{
+  text-align: center;
+  font-weight:bolder;
+  font-size: 60px;
+
+  text-decoration-line:underline;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(166, 220, 58);
+
+  
+}
+.btn{
+ font-size: larger;
+ color: rgb(2, 2, 2);
+ font-weight: 800;
+  background-color: burlywood;
+  border-radius: 4px;
+}
+.btn:hover{
+  transform: translateY(-10px);
+  background-color: #5b5350;
+}
+

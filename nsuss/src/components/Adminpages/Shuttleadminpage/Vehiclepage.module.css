@@ -1,5 +1,5 @@
 .background {
-  background-image: url(../../../Assets/addvehcilepage.jpg);
+  background-image: url(../../../Assets/shuttleadminpage.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -7,10 +7,11 @@
   align-items: center;
 }
 
-.container1 {
+.container2 {
   min-height: 768px;
-  border: 1px dotted rgb(6, 6, 6);
-  padding: 2%;
+  min-width: 900px;
+  background-color: #000;
+  opacity: .7;
 }
 
 .inputbox {
@@ -49,18 +50,17 @@
   text-decoration: wavy underline;
   font-family: cursive;
 }
+.h11 {
+  text-align: center;
+  text-decoration: wavy underline;
+  font-family: cursive;
+  color: aliceblue;
+}
 .Item_List {
   text-align: center;
   margin-top: 50px;
 }
-.Item_List ul li {
-  display: inline;
-  border: 1px solid black;
-  padding: 10px;
-}
-.Item_List ul {
-  margin: 0;
-}
+
 .background1 {
   background-image: url(../../../Assets/items.jpg.webp);
   background-size: cover;
@@ -81,3 +81,74 @@
   font-weight: bolder;
   font-size: xx-large;
 }
+
+/*list*/
+
+.li{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 200px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+
+}
+.li1{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 110px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+
+}
+.li2{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 250px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+
+}
+.ul{
+  margin-top:0px;
+  height: 45px;
+margin-left: 50px;
+display:flex;
+margin-bottom: 0px;
+color:rgb(255, 162, 96);
+
+}
+
+
+
+.btn{
+ 
+ color: rgb(2, 2, 2);
+ font-weight: 300;
+  background-color: white;
+  border-radius: 4px;
+  height:30px
+}
+.btn:hover{
+  transform: translateY(-10px);
+  background-color: #5b5350;
+}
+
+

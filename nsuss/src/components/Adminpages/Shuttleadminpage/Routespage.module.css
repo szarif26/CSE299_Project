@@ -1,0 +1,107 @@
+.background {
+  background-image: url(../../../Assets/shuttleadminpage.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  min-height: 768px;
+  min-width: 900px;
+  background-color: #000;
+  opacity: .7;
+}
+
+.inputbox {
+  padding: 7px;
+  display: inline;
+  border: 1px solid rgb(61, 63, 64);
+  background: rgb(0, 96, 145);
+  width: 250px;
+  height: 50px;
+  margin: 20px;
+  align-items: center;
+  border-radius: 10px;
+  color: azure;
+  font-size: 20px;
+  font-weight: 700;
+}
+.button {
+  width: 150px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  padding: 12px 0px;
+  background: rgb(115, 113, 116);
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-top: 0px;
+  font-family: serif;
+  margin: 20px;
+}
+.button:hover {
+  background-color: #5b5350;
+}
+.h1 {
+  text-align: center;
+  text-decoration: wavy underline;
+  font-family: cursive;
+  color: rgb(29, 164, 164);
+}
+.Item_List {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+/*list*/
+
+.li{
+  display: inline;
+  border: 1px solid rgb(147, 171, 118);
+  font-size: 20px;
+  font-weight: 10px;
+  padding: 6px;
+  color:rgb(255, 162, 96);
+  display: table-cell;
+  width: 200px;
+  height:auto;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+
+
+.ul{
+  margin-top:0px;
+  height: 45px;
+margin-left: 50px;
+display:flex;
+margin-bottom: 0px;
+color:rgb(255, 162, 96);
+}
+
+
+
+.btn{
+ 
+ color: rgb(255, 255, 255);
+ font-weight: 300px;
+
+  background-color: rgb(109, 100, 100);
+  border-radius: 4px;
+  height:30px
+}
+.btn:hover{
+  transform: translateY(-10px);
+  background-color: #beb0ab;
+}
+
+

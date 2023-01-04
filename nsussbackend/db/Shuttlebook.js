@@ -6,8 +6,6 @@ const shuttlebookschema = new mongoose.Schema({
     way : 'string',
     timeslot : 'string',
     date : 'string',
-    
-
 });
 
 module.exports = mongoose.model("shuttlebook", shuttlebookschema)

@@ -22,6 +22,7 @@ useEffect(() => {
     });
     result = await result.json();
     console.warn(result);
+    getVehicle();
     alert("Successfully Added Your Vehicle");
   };
 
@@ -73,33 +74,35 @@ useEffect(() => {
         <button onClick={handleAddVehicle} className={classes.button}>Add Vehicle</button>
         <br></br>
         <br></br>
-        <h1 className={classes.h1}>Vehicle List:</h1>
+        <div className={classes.container2}>
+        <h1 className={classes.h11}>Vehicle List:</h1>
         <br></br>
-        <ul>
-          <li>Serial Number</li>
-          <li>Vehicle ID</li>
-          <li>Brand</li>
-          <li>Model</li>
-          <li>Registration Number</li>
-          <li>Capacity</li>
-          <li>Delete</li>
+        <ul className={classes.ul}>
+          <li className={classes.li1}>#</li>
+          <li className={classes.li}>Vehicle ID</li>
+          <li className={classes.li1}>Brand</li>
+          <li className={classes.li}>Model</li>
+          <li className={classes.li2}>Registration Number</li>
+          <li className={classes.li1}>Capacity</li>
+          <li className={classes.li1}>Delete</li>
         </ul>
         {
         vehicle.map((vehicle, index) =>
-          <ul key={vehicle.vehicleId} >
-            <li>{index + 1}</li>
-            <li>{vehicle.vehicleId}</li>
-            <li>{vehicle.model}</li>
-            <li>{vehicle.brand}</li>
-            <li>{vehicle.registrationNumber}</li>
-            <li>{vehicle.capacity}</li>
-            <li>
-              <button onClick={() => deleteVehicle(vehicle.vehicleId)}>Delete</button>
+          <ul key={vehicle.vehicleId}  className={classes.ul}>
+            <li className={classes.li1}>{index + 1}</li>
+            <li className={classes.li}>{vehicle.vehicleId}</li>
+            <li className={classes.li1}> {vehicle.brand}</li>
+            <li className={classes.li}>{vehicle.model}</li>
+           
+            <li className={classes.li2}>{vehicle.registrationNumber}</li>
+            <li className={classes.li1}>{vehicle.capacity}</li>
+            <li className={classes.li1}>
+              <button onClick={() => deleteVehicle(vehicle.vehicleId)} className={classes.btn}>Delete</button>
             </li>
-
           </ul>
         )
       }
+        </div>
       </div>
     </div>
   );

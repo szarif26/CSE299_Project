@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "63933564131d56ba1a82487c"
+  },
+  "courseid_sec": "CSE299_10",
+  "coursename": "Junior Design",
+  "facultyid": "muo",
+  "studentsid": [
+    "1931796042",
+    "1931313042"
+  ]
+},{
+  "_id": {
+    "$oid": "639337dd131d56ba1a82487f"
+  },
+  "courseid_sec": "CSE493_1",
+  "coursename": "Cybersecurity",
+  "facultyid": "muo",
+  "studentsid": [
+    "1931313042"
+  ]
+},{
+  "_id": {
+    "$oid": "6394904d6e8f1db0c5bbe39c"
+  },
+  "courseid_sec": "CSE327_2",
+  "coursename": "Software Engineering",
+  "facultyid": "slb",
+  "studentsid": [
+    "1931796042"
+  ]
+}]

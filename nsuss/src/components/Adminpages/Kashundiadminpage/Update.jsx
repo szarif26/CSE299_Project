@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
-import classes from "./Item.module.css";
+import classes from "./UpdateItem.module.css";
 
 const Update = () => {
   const [name, setName] = useState("");

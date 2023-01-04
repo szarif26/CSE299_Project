@@ -1,0 +1,119 @@
+.Cart_List {
+    text-align: center;
+   
+  }
+  .li{
+    display: inline;
+    border: 1px solid rgb(147, 171, 118);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    color:rgb(255, 162, 96);
+    display: table-cell;
+    width: 210px;
+    height:auto;
+  
+  }
+  .li1{
+    display: inline;
+    border: 1px solid rgb(147, 171, 118);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    color:rgb(255, 162, 96);
+    display: table-cell;
+    width: 120px;
+    height:auto;
+  
+  }
+  .li2{
+    display: inline;
+    border: 1px solid rgb(147, 171, 118);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    color:rgb(255, 162, 96);
+    display: table-cell;
+    width: 210px;
+    height:auto;
+   
+  
+  }
+  .li3{
+    display: inline;
+    border: 1px solid rgb(147, 171, 118);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    color:rgb(255, 162, 96);
+    display: table-cell;
+    width: 990px;
+    height:auto;
+   
+  
+  }
+  
+  .ul{
+    margin-top:0;
+    height: 45px;
+    align-self: center;
+  align-content: center;
+  margin-left: 20px;
+  display:flex;
+  margin-bottom: 0px;
+  }
+  
+  .background1 {
+    background-image: url(../../../Assets/cart2.png.jpeg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+    background-position: flex;
+   
+  }
+  
+  .container2 {
+    background-color: #000;
+    opacity: .8;
+    align-items: center;
+    width:1440px;
+    
+    min-height: 1000px;
+  
+    
+  }
+  
+  .heading{
+    
+    text-align: center;
+    font-weight:bolder;
+    font-size: 60px;
+   
+    text-decoration-line:underline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(221, 223, 216);
+    
+  }
+  .inputboxs{
+    border-radius: 7px;
+    width:550px;
+    height:60px;
+    font-weight: bolder;
+    font-size: large;
+    color:black;
+
+  }
+  .btn{
+    border-radius: 5px;
+    height:35px;
+   font-size: large;
+   font-style: italic;
+   background-color: bisque;
+  }
+  .btn:hover {
+    transform: translateY(-10px);
+    background-color: #5b5350;
+  }
+  
+  
